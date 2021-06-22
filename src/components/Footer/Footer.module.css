@@ -1,0 +1,28 @@
+.footer {
+  padding: 1rem;
+
+  background-color: #333;
+}
+
+.Allinfo {
+  font-size: 1ex;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {
+  color: #ffffff;
+}
+
+.infoList {
+  padding: 0.1rem;
+
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .Allinfo {
+    font-size: 1rem;
+  }
+}

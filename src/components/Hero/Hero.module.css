@@ -1,0 +1,40 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://wallpaperaccess.com/full/2505746.jpg") center
+    center/cover no-repeat;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+
+  color: #ffffff;
+  font-size: 8em;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}

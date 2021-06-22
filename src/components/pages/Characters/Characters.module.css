@@ -1,0 +1,39 @@
+.character {
+  width: 100%;
+  height: 100vh;
+}
+
+.openCharacterSidebarBtn {
+  border: none;
+  background: #333;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 10%;
+
+  position: fixed;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.openCharacterSidebarBtn:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .openCharacterSidebarBtn {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .openCharacterSidebarBtn {
+    margin-top: 50%;
+  }
+}

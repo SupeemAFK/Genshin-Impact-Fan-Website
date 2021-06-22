@@ -1,0 +1,99 @@
+.characterInfo {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 20%;
+
+  max-width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.characterImgWrapper {
+  max-width: 700px;
+}
+
+.characterImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.characterText {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 1.5rem;
+}
+
+.name {
+  font-size: 5rem;
+}
+
+.characterTextInfo {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  margin-left: 0.5rem;
+}
+
+.visionWrapper {
+  margin-left: 1rem;
+
+  max-width: 30px;
+}
+
+.vision {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .characterText {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-top: 10rem;
+  }
+
+  .characterText {
+    font-size: 1rem;
+    max-width: 40%;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding-top: 50rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .characterText {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+}
