@@ -3,10 +3,12 @@ import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 //components
-import Home from './components/pages/Home/Home'
-import Characters from './components/pages/Characters/Characters';
 import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
+
+//pages
+import Home from './components/pages/Home/Home'
+import Characters from './components/pages/Characters/Characters';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
