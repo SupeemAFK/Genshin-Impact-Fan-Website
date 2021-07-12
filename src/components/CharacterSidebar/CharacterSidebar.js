@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 import styles from './CharacterSidebar.module.css'
 
-export default function characterSidebar({ charactesrNameArray, isCharacterSidebarOpen, closeSidebar }) {  
+export default function characterSidebar({ charactersNameArray, isCharacterSidebarOpen, closeSidebar }) {  
     
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -14,13 +14,13 @@ export default function characterSidebar({ charactesrNameArray, isCharacterSideb
         <div className={isCharacterSidebarOpen ? `${styles.characterSidebar} ${styles.active}` : styles.characterSidebar}>
             <button onClick={() => closeSidebar()} className={styles.closeBtn}><AiOutlineClose /></button>
             <ul className={styles.nav}>
-                {charactesrNameArray.map((charactesrNameArray, index) => (
+                {charactersNameArray.map((charactersName, index) => (
                     <li key={index} className={styles.navItems}>
                         <div className={styles.logoWrapper}>
-                            <img src={`/assets/images/characters/${charactesrNameArray}/icon.png`} alt={charactesrNameArray} className={styles.logoImg} />
+                            <img src={`https://api.genshin.dev/characters/${charactersName}/icon`} alt={charactersName} className={styles.logoImg} />
                         </div>
-                        <Link to={`/${charactesrNameArray}`} onClick={() => closeSidebar()} className={styles.linkBtn}>
-                            {capitalizeFirstLetter(charactesrNameArray)}
+                        <Link to={`/${charactersName}`} onClick={() => closeSidebar()} className={styles.linkBtn}>
+                            {capitalizeFirstLetter(charactersName)}
                         </Link>
                     </li>
                 ))}

@@ -31,7 +31,7 @@ export default function Characters() {
     return (
         <div className={styles.character}>
             <button onClick={() => openSidebar()} className={styles.openCharacterSidebarBtn}><MdPlayArrow /></button>
-            <CharacterSidebar charactesrNameArray={charactersNameArray} isCharacterSidebarOpen={isCharacterSidebarOpen} closeSidebar={closeSidebar} />
+            <CharacterSidebar charactersNameArray={charactersNameArray} isCharacterSidebarOpen={isCharacterSidebarOpen} closeSidebar={closeSidebar} />
             <CharacterInfo />
         </div>
     )

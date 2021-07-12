@@ -13,8 +13,10 @@ export default function CharacterInfo() {
         async function fetchAPI() {
             try {
                 setisLoading(true)
+
                 const response = await getCharacterData(characterNameParam)
                 setCharacterData(response)
+
                 setisLoading(false)
             } catch (error) {
                 console.log(error)
@@ -37,7 +39,7 @@ export default function CharacterInfo() {
         <div className={styles.characterInfo}>
             <div className={styles.container}>
                 <div className={styles.characterImgWrapper}>
-                    <img src={`/assets/images/characters/${characterNameParam}/portrait.png`} alt={name} className={styles.characterImg} />
+                    <img src={`https://api.genshin.dev/characters/${characterNameParam}/portrait`} alt={name} className={styles.characterImg} />
                 </div>
                 <div className={styles.characterText}>
                     <h1 className={styles.name}>{name}</h1>
